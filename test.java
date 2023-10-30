@@ -1,7 +1,7 @@
 public class test {
     
          Retrofit retrofit = new Retrofit.Builder()
-        .baseUrl("https://pesewacoins.com/dev/api/v1/")
+        .baseUrl("https://example.com/dev/api/v1/")
         .addConverterFactory(GsonConverterFactory.create())
         .build();
 
