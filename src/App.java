@@ -1,19 +1,14 @@
 import java.util.List;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class app {
 
+public class app {
+   
     public static void main(String[] args)  {
-     
         //start retrofit
         Retrofit retrofit = new Retrofit.Builder()
         .baseUrl(baseurl.geturl())
@@ -21,7 +16,7 @@ public class app {
         .build();
         System.out.println("Requesting data please wait...");
         service apiservice = retrofit.create(service.class);
-        
+
         Call<List<users>> userRequest = apiservice.getUsers();
         userRequest.enqueue(new Callback<List<users>>() {
             @Override
