@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/applcare/Downloads/converter-gson-2.4.0.jar",
+        "/Users/applcare/Downloads/retrofit-2.4.0.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
