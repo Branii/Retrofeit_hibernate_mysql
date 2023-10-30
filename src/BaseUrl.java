@@ -1,6 +1,6 @@
-public class BaseUrl {
+public class baseurl {
     
-    public static String getUrl(){
+    public static String geturl(){
         return "https://pesewacoins.com/dev/api/v1/";
     }
 

@@ -1,6 +1,6 @@
 import org.hibernate.cfg.Configuration;
 
-public class HibernateConfig {
+public class config {
 
     public static Configuration configureHibernate() {
 
@@ -13,7 +13,7 @@ public class HibernateConfig {
         configuration.setProperty("hibernate.connection.password", "root"); //change for pc
 
         // Add annotated entity classes
-        configuration.addAnnotatedClass(Users.class);
+        configuration.addAnnotatedClass(users.class);
         // Add more entity classes as needed
         return configuration;
     }
